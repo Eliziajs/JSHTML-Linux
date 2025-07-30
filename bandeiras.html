@@ -46,6 +46,16 @@ function desenhaBandeiraAlemanha() {
     pincel.fillRect(0, 266, 600, 133);
 }
 
-//desenhaBandeiraBrasil();
-//desenhaBandeiraAlemanha();
+  function limpaTela() {
+    pincel.clearRect(0, 0, 600, 400);
+    }
+function trocaBandeira(){
+
+    setInterval(desenhaBandeiraBrasil,1000);
+    limpaTela()
+    setInterval(desenhaBandeiraAlemanha,1000) ;
+}
+
+    setInterval(desenhaBandeiraBrasil,1000);
+    setInterval(desenhaBandeiraAlemanha,5000);
 </script>
